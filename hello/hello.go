@@ -1,4 +1,3 @@
-// Service hello implements a simple hello world REST API.
 package hello
 
 import (
@@ -20,7 +19,7 @@ import (
 //
 //	curl http://localhost:4000/hello/World
 //
-//encore:api public path=/hello/:name
+// encore:api public path=/hello/:name
 func World(ctx context.Context, name string) (*Response, error) {
 	msg := "Hello, " + name + "!"
 	return &Response{Message: msg}, nil

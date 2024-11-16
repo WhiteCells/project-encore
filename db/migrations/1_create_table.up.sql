@@ -1,0 +1,5 @@
+CREATE TABLE db_learn_tb {
+    id BIGSERIAL PRIMARY KEY,
+    title TEXT NOT NULL,
+    done BOOLEAN NOT NULL DEFAULT false
+}
